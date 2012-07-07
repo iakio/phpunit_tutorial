@@ -3,7 +3,7 @@ require_once __DIR__ . '/../src/Calculator.php';
 class CalculatorTest extends PHPUnit_Framework_TestCase
 {
 	/** @test */
-	function multiplyで乗算結果が取得できる() {
+	function multiplyで3と4の乗算結果が取得できる() {
 		$calc = new Calculator();
 		$expected = 12;
 		$actual = $calc->multiply(3, 4);

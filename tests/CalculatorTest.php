@@ -17,4 +17,12 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 		$actual = $calc->multiply(5, 7);
 		$this->assertThat($actual, $this->equalTo($expected));
 	}
+
+	/** @test */
+	function divideで3と2の除算結果が取得できる() {
+		$calc = new Calculator();
+		$expected = 1.5;
+		$actual = $calc->divide(3, 2);
+		$this->assertThat($actual, $this->equalTo($expected));
+	}
 }

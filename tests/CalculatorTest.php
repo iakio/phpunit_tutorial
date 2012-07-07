@@ -9,4 +9,12 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 		$actual = $calc->multiply(3, 4);
 		$this->assertThat($actual, $this->equalTo($expected));
 	}
+
+	/** @test */
+	function multiplyで5と7の乗算結果が取得できる() {
+		$calc = new Calculator();
+		$expected = 12;
+		$actual = $calc->multiply(5, 7);
+		$this->assertThat($actual, $this->equalTo($expected));
+	}
 }

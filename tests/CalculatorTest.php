@@ -25,4 +25,14 @@ class CalculatorTest extends PHPUnit_Framework_TestCase
 		$actual = $calc->divide(3, 2);
 		$this->assertThat($actual, $this->equalTo($expected));
 	}
+
+	/**
+	 * @test
+	 * @expectedException InvalidArgumentException
+	 */
+	function divideの第2引数を0に指定した場合にはInvalidArgumentExceptionを送出する() {
+		$calc = new Calculator();
+		$calc->divide(5, 0);
+	}
+
 }

@@ -1,4 +1,5 @@
 <?php
+namespace Phpunit\Tutorial;
 
 class Calculator
 {
@@ -9,7 +10,7 @@ class Calculator
 
 	function divide($x, $y)
 	{
-		if ($y === 0) throw new InvalidArgumentException;
+		if ($y === 0) throw new \InvalidArgumentException;
 		return $x / $y;
 	}
 }

@@ -1,6 +1,7 @@
 <?php
-require_once __DIR__ . '/../src/Calculator.php';
-class CalculatorTest extends PHPUnit_Framework_TestCase
+namespace Phpunit\Tutorial;
+
+class CalculatorTest extends \PHPUnit_Framework_TestCase
 {
 	/** @test */
 	function multiplyで3と4の乗算結果が取得できる() {
